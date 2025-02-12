@@ -99,10 +99,17 @@ public class EjerciciosListas {
         return listaSinDuplicados;
     }
 
-    private static String combinarListas(List<Integer> lista, List<Integer> lista2) {
+    //ejercicio 6
+    public static boolean estaOrdenada(List<Integer> lista) {
+        for (int i = 0; i < lista.size() - 1; i++) {
+            if (lista.get(i) > lista.get(i + 1)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    private static String estaOrdenada(List<Integer> lista) {
+    private static String combinarListas(List<Integer> lista, List<Integer> lista2) {
     }
 
 
