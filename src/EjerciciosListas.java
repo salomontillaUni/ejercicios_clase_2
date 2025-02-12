@@ -28,11 +28,14 @@ public class EjerciciosListas {
         //Ejercicio 4, 5, 6, 7 - Salomon Montilla
         List<Integer> lista = List.of(3, 1, 4, 1, 5, 9, 2);
         List<Integer> lista2 = List.of(10, 20, 30);
-        System.out.println("Ejercicio 4: ------");
         System.out.println("Lista original: " + lista);
+        System.out.println("Ejercicio 4: ------");
         System.out.println("Lista invertida: " + invertirLista(lista));
+        System.out.println("Ejercicio 5: ------");
         System.out.println("Lista sin duplicados: " + eliminarDuplicados(lista));
+        System.out.println("Ejercicio 6: ------");
         System.out.println("¿Lista ordenada? " + estaOrdenada(lista));
+        System.out.println("Ejercicio 7: ------");
         System.out.println("Lista combinada: " + combinarListas(lista, lista2));
 
     }
@@ -82,14 +85,27 @@ public class EjerciciosListas {
         return listaInvertida;
     }
 
+    //ejercicio 5
+
+    public static List<Integer> eliminarDuplicados(List<Integer> lista) {
+        List<Integer> listaSinDuplicados = new ArrayList<>();
+
+        for (int num : lista) {
+            if (!listaSinDuplicados.contains(num)) {
+                listaSinDuplicados.add(num);
+            }
+        }
+
+        return listaSinDuplicados;
+    }
+
     private static String combinarListas(List<Integer> lista, List<Integer> lista2) {
     }
 
     private static String estaOrdenada(List<Integer> lista) {
     }
 
-    private static String eliminarDuplicados(List<Integer> lista) {
-    }
+
 
 }
 
