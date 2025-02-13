@@ -34,7 +34,7 @@ public class EjerciciosListas {
         List<Integer> lista2 = List.of(10, 20, 30);
         System.out.println("Lista 1 original: " + lista);
         System.out.println("Lista 2 original: " + lista2);
-        
+
         System.out.println("Ejercicio 4: ------");
         System.out.println("Lista invertida: " + invertirLista(lista));
         System.out.println("Ejercicio 5: ------");
